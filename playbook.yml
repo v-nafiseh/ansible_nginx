@@ -1,0 +1,9 @@
+---
+- name: use nginx role playbook
+  hosts: web
+  user: root
+  become: true
+
+  roles:
+    - role: nginx
+      # system_manager: admin@golinuxcloud.com
